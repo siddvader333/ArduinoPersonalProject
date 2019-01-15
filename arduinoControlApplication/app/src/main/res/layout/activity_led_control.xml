@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.siddharth_vijay.arduinocontrol.ledControl"
+    android:background="#434242">
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_button"
+        android:fadingEdge="none"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Right"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        tools:typeface="monospace" />
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_button"
+        android:fadingEdge="none"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Left"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        tools:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arduino Controller "
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="23dp" />
+
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/downButton"
+        android:layout_alignStart="@+id/downButton"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/rounded_button"
+        android:fadingEdge="none"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Forward"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        tools:typeface="monospace" />
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/rounded_button"
+        android:fadingEdge="none"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Backwards"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        tools:typeface="monospace" />
+
+    <Button
+        android:id="@+id/dis_btn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:fadingEdge="none"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        tools:text="DISCONNECT"
+        tools:typeface="monospace" />
+
+
+</RelativeLayout>
